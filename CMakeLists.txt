@@ -4,8 +4,8 @@
 cmake_minimum_required (VERSION 3.8)
 
 # 将源代码添加到此项目的可执行文件。SS
-add_executable (CMakeProject2 main.cpp ws_socket.h ws_socket.cc)
+add_executable (ws_socket main.cc ws_socket.h ws_socket.cc thread_pool.h thread_pool.cc)
 
-target_link_libraries(CMakeProject2 pthread)
+target_link_libraries(ws_socket pthread)
 
 # TODO: 如有需要，请添加测试并安装目标。
